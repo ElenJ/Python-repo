@@ -33,6 +33,9 @@ for filename in DifferenceInFoldersFiles:
     shutil.copy(Folder1+"/"+filename, Folder2)
 print("Your folder 1 contains "+str(len(FoldersInFolder))+" folders")
 print(FoldersInFolder)
+#copies subfolder and its content
+for dirname in FoldersInFolder:
+    shutil.copytree(Folder1+"/"+dirname, Folder2+"/"+dirname)
 #repeat for alternate comparison
 #Checks if entry is a file or a folder
 FoldersInFolder2 = []
@@ -49,5 +52,8 @@ for filename in DifferenceInFoldersFiles2:
     shutil.copy(Folder2+"/"+filename, Folder1)
 print("Your folder 2 contains "+str(len(FoldersInFolder2))+" folders")
 print(FoldersInFolder2)
+#copies subfolder and its content
+for dirname in FoldersInFolder2:
+    shutil.copytree(Folder2+"/"+dirname, Folder1+"/"+dirname)
 
 print("All done!")
