@@ -1,0 +1,7 @@
+[{"question": "What are dolphins?",
+  "alternatives": ["Amphibians", "Fish", "Mammals", "Birds"],
+  "correct answer":3},
+ {"question": "Is the earth flat?",
+  "alternatives": ["Yes", "No"],
+  "correct answer": 2}
+ ]
